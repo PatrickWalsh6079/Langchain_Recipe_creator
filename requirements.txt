@@ -1,0 +1,4 @@
+langchain==0.0.279
+gpt4all==1.0.9
+streamlit
+streamlit-tags
