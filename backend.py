@@ -7,7 +7,7 @@ def recipe_llm(items):
     template = """
     You are a helpful AI assistant that suggests recipes based on available ingredients.
     
-    Create a recipe based on the following ingredients: {ingredients} and state how long it takes to create the meal. Give a catchy name to the recipe.
+    Create a recipe based on the following ingredients: {ingredients} and state how long it takes to create the meal. Strictly only use some or all of the ingredients provided, but no other ingredients. Give a catchy name to the recipe.
     """
 
     prompt = PromptTemplate(template=template, input_variables=["ingredients"])
